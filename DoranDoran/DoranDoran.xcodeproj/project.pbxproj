@@ -10,10 +10,13 @@
 		36308229295B945700FEDB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308228295B945700FEDB9E /* AppDelegate.swift */; };
 		3630822B295B945700FEDB9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630822A295B945700FEDB9E /* SceneDelegate.swift */; };
 		3630822D295B945700FEDB9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630822C295B945700FEDB9E /* ViewController.swift */; };
-		36308230295B945700FEDB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3630822E295B945700FEDB9E /* Main.storyboard */; };
 		36308233295B945700FEDB9E /* DoranDoran.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36308231295B945700FEDB9E /* DoranDoran.xcdatamodeld */; };
 		36308235295B945A00FEDB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36308234295B945A00FEDB9E /* Assets.xcassets */; };
 		36308238295B945A00FEDB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36308236295B945A00FEDB9E /* LaunchScreen.storyboard */; };
+		36308241295B958300FEDB9E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308240295B958300FEDB9E /* MainTabBarController.swift */; };
+		36308246295B9A6200FEDB9E /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308245295B9A6200FEDB9E /* FavoriteTableViewController.swift */; };
+		36308248295B9AB600FEDB9E /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308247295B9AB600FEDB9E /* SpeechViewController.swift */; };
+		3630824A295B9B1300FEDB9E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308249295B9B1300FEDB9E /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,14 @@
 		36308228295B945700FEDB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3630822A295B945700FEDB9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3630822C295B945700FEDB9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3630822F295B945700FEDB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36308232295B945700FEDB9E /* DoranDoran.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DoranDoran.xcdatamodel; sourceTree = "<group>"; };
 		36308234295B945A00FEDB9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36308237295B945A00FEDB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36308239295B945A00FEDB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36308240295B958300FEDB9E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		36308245295B9A6200FEDB9E /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		36308247295B9AB600FEDB9E /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		36308249295B9B1300FEDB9E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		36308227295B945700FEDB9E /* DoranDoran */ = {
 			isa = PBXGroup;
 			children = (
+				3630823F295B957300FEDB9E /* Source */,
 				36308228295B945700FEDB9E /* AppDelegate.swift */,
 				3630822A295B945700FEDB9E /* SceneDelegate.swift */,
 				3630822C295B945700FEDB9E /* ViewController.swift */,
-				3630822E295B945700FEDB9E /* Main.storyboard */,
 				36308234295B945A00FEDB9E /* Assets.xcassets */,
 				36308236295B945A00FEDB9E /* LaunchScreen.storyboard */,
 				36308239295B945A00FEDB9E /* Info.plist */,
 				36308231295B945700FEDB9E /* DoranDoran.xcdatamodeld */,
 			);
 			path = DoranDoran;
+			sourceTree = "<group>";
+		};
+		3630823F295B957300FEDB9E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				36308240295B958300FEDB9E /* MainTabBarController.swift */,
+				36308242295B996400FEDB9E /* Favorites */,
+				36308243295B999A00FEDB9E /* Speech */,
+				36308244295B99EA00FEDB9E /* Settings */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		36308242295B996400FEDB9E /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				36308245295B9A6200FEDB9E /* FavoriteTableViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		36308243295B999A00FEDB9E /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				36308247295B9AB600FEDB9E /* SpeechViewController.swift */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+		36308244295B99EA00FEDB9E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				36308249295B9B1300FEDB9E /* SettingTableViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +171,6 @@
 			files = (
 				36308238295B945A00FEDB9E /* LaunchScreen.storyboard in Resources */,
 				36308235295B945A00FEDB9E /* Assets.xcassets in Resources */,
-				36308230295B945700FEDB9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +181,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3630824A295B9B1300FEDB9E /* SettingTableViewController.swift in Sources */,
 				3630822D295B945700FEDB9E /* ViewController.swift in Sources */,
 				36308229295B945700FEDB9E /* AppDelegate.swift in Sources */,
+				36308248295B9AB600FEDB9E /* SpeechViewController.swift in Sources */,
+				36308241295B958300FEDB9E /* MainTabBarController.swift in Sources */,
 				3630822B295B945700FEDB9E /* SceneDelegate.swift in Sources */,
 				36308233295B945700FEDB9E /* DoranDoran.xcdatamodeld in Sources */,
+				36308246295B9A6200FEDB9E /* FavoriteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3630822E295B945700FEDB9E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3630822F295B945700FEDB9E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		36308236295B945A00FEDB9E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +331,6 @@
 				INFOPLIST_FILE = DoranDoran/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -324,7 +359,6 @@
 				INFOPLIST_FILE = DoranDoran/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
