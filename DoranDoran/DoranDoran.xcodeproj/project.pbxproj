@@ -17,6 +17,7 @@
 		36308246295B9A6200FEDB9E /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308245295B9A6200FEDB9E /* FavoriteTableViewController.swift */; };
 		36308248295B9AB600FEDB9E /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308247295B9AB600FEDB9E /* SpeechViewController.swift */; };
 		3630824A295B9B1300FEDB9E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308249295B9B1300FEDB9E /* SettingTableViewController.swift */; };
+		36B516EA29677A26007D3238 /* SpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B516E929677A26007D3238 /* SpeechView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		36308245295B9A6200FEDB9E /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		36308247295B9AB600FEDB9E /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 		36308249295B9B1300FEDB9E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		36B516E929677A26007D3238 /* SpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		36308243295B999A00FEDB9E /* Speech */ = {
 			isa = PBXGroup;
 			children = (
+				36B516E929677A26007D3238 /* SpeechView.swift */,
 				36308247295B9AB600FEDB9E /* SpeechViewController.swift */,
 			);
 			path = Speech;
@@ -188,6 +191,7 @@
 				36308241295B958300FEDB9E /* MainTabBarController.swift in Sources */,
 				3630822B295B945700FEDB9E /* SceneDelegate.swift in Sources */,
 				36308233295B945700FEDB9E /* DoranDoran.xcdatamodeld in Sources */,
+				36B516EA29677A26007D3238 /* SpeechView.swift in Sources */,
 				36308246295B9A6200FEDB9E /* FavoriteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
