@@ -18,6 +18,7 @@
 		36308248295B9AB600FEDB9E /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308247295B9AB600FEDB9E /* SpeechViewController.swift */; };
 		3630824A295B9B1300FEDB9E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36308249295B9B1300FEDB9E /* SettingTableViewController.swift */; };
 		36B516EA29677A26007D3238 /* SpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B516E929677A26007D3238 /* SpeechView.swift */; };
+		36DB4A492968BDFA006B1EFF /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB4A482968BDFA006B1EFF /* TTSService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		36308247295B9AB600FEDB9E /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 		36308249295B9B1300FEDB9E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		36B516E929677A26007D3238 /* SpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechView.swift; sourceTree = "<group>"; };
+		36DB4A482968BDFA006B1EFF /* TTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		36308227295B945700FEDB9E /* DoranDoran */ = {
 			isa = PBXGroup;
 			children = (
+				36DB4A472968BDDC006B1EFF /* TTS */,
 				3630823F295B957300FEDB9E /* Source */,
 				36308228295B945700FEDB9E /* AppDelegate.swift */,
 				3630822A295B945700FEDB9E /* SceneDelegate.swift */,
@@ -112,6 +115,14 @@
 				36308249295B9B1300FEDB9E /* SettingTableViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		36DB4A472968BDDC006B1EFF /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				36DB4A482968BDFA006B1EFF /* TTSService.swift */,
+			);
+			path = TTS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3630824A295B9B1300FEDB9E /* SettingTableViewController.swift in Sources */,
+				36DB4A492968BDFA006B1EFF /* TTSService.swift in Sources */,
 				3630822D295B945700FEDB9E /* ViewController.swift in Sources */,
 				36308229295B945700FEDB9E /* AppDelegate.swift in Sources */,
 				36308248295B9AB600FEDB9E /* SpeechViewController.swift in Sources */,

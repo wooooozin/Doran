@@ -29,15 +29,16 @@ class SpeechView: UIView {
         let image = UIImage(systemName: "play.circle.fill", withConfiguration: config)
         button.tintColor = .black
         button.setImage(image, for: .normal)
-        
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
     lazy var resetButton: UIButton = {
         let button = UIButton()
+        let config = UIImage.SymbolConfiguration(pointSize: 65)
+        let image = UIImage(systemName: "arrow.triangle.2.circlepath", withConfiguration: config)
         button.tintColor = .black
-        button.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        button.setImage(image, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -45,6 +46,7 @@ class SpeechView: UIView {
     let stackView: UIStackView = {
         let sv = UIStackView()
         sv.axis = .horizontal
+        sv.alignment = .fill
         sv.distribution = .fillEqually
         sv.spacing = 10
         sv.translatesAutoresizingMaskIntoConstraints = false
